@@ -17,6 +17,7 @@ Le tutoriel 14 a été utilisé pour calculer plusieurs couches de textures de p
 Le calcul des différentes couches de profondeur a été fait de la façon suivante. Un shader enregistre la profondeur (gl_FragCoord.z) dans une texture. Il ne restait qu’à comprendre le principe de projection vers la lumière par la vue de la caméra pour comparer la profondeur de chaque pixel par rapport à la surface. C’est en regardant le tutoriel 16 (shadow_maps) qu’une astuce aidante a été trouvée. Il s’agit d’envoyer au shader de l’objet la matrice de transformation pour la projection vers la lumière. Ainsi, il est possible de retrouver les coordonnées sur les textures prises sur ces points de vue et de les utiliser. Il y a des artéfacts à cause de cette technique qui n’ont pas été réglés, puisqu’il est difficile de débugger son shader.
 
 **Flamme**
+---------------------------------------
 
 
 Pour créer la flamme de la chandelle, le tutoriel 18 sur le thème des particules a été modifié. Voici les modifications apportées:
